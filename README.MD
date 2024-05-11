@@ -33,3 +33,7 @@ The script will:
 
 
 There is a way to graduate from being a soy dev not outlined in this readme. You will have to figure it out by reading the install script.
+
+### What do the tags mean in this repo
+
+The tags represent the lts version of ubuntu the script targets. Only the current version is supported at the moment (24.04).
