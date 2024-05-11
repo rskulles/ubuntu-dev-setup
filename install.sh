@@ -23,7 +23,7 @@ else
 
 echo "No Soy Dev Here!!!"
 echo "Ensuring needed developer tools installed..."
-sudo apt -y install wl-clipboard gettext cmake gcc g++ gdb ripgrep fd-find
+sudo apt -y install font-manager wl-clipboard xclip gettext cmake gcc g++ gdb ripgrep fd-find
 echo "I use vim by the way..."
 git clone https://github.com/neovim/neovim
 cd neovim
@@ -33,6 +33,13 @@ sudo make install
 cd ..
 git clone https://github.com/LazyVim/starter $HOME/.config/nvim
 rm -rf $HOME/.config/nvim/.git
-echo "Run nvim to setup and you are all set."
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraMono.zip
+unzip FriaMono.zip
+font-manager -i ./*.otf
+rm ./FiraMono.zip
+rm ./*.otf
+rm ./LICENSE
+rm ./README.md
+echo "Setup your terminal to use FiraMono and run nvim to setup and you are all set."
 rm -rf neovim
 fi
