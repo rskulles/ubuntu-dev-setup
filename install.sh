@@ -1,3 +1,4 @@
+if [[ -z ${MAIDENLESS} ]]; then
 echo "Updating and pulling development packages..."
 sudo apt update
 sudo apt -y upgrade
@@ -42,4 +43,7 @@ rm ./LICENSE
 rm ./README.md
 echo "Setup your terminal to use FiraMono and run nvim to setup and you are all set."
 rm -rf neovim
+fi
+else
+echo "You use Arch Linux. Figure it out yourself."
 fi
